@@ -21,7 +21,9 @@
     <p id="description">Te pedimos algunos datos para contactarte y enviarte una propuesta que se adapte a lo que estas buscando.</p>
         </section>
         <section>
-            <form action="consulta por un viaje" id="survey-form">
+            <form  id="survey-form"     action="https://formspree.io/f/myylowrg"
+            method="POST"
+            enctype="multipart/form-data">
                 <label for="Nombre" id="name-label">
                     <span><h5>Tu nombre o apodo</h5></span>
                 <input type="text" id="name" placeholder="Como querés que te digamos" autocomplete="name" name="Nombre" required/>
@@ -47,9 +49,9 @@
                 <input type="text" id="Cantidad de personas y si hay menores edades" name="Cant paxs"required />
                 </label>
                 <section id="quienes">
-                <label for="quienes viajan"><input id="quienes viajan" type="checkbox" name="quienes viajan"> Amigos</label>
-                <label for="quienes viajan"><input id="quienes viajan" type="checkbox" name="quienes viajan"> Pareja</label>
-                  <label for="quienes viajan"><input id="quienes viajan" type="checkbox" name="quienes viajan"> Familia</label>
+                <label for="quienes viajan"><input id="quienes viajan" type="checkbox" name="quienes viajan" value="amigos"> Amigos</label>
+                <label for="quienes viajan"><input id="quienes viajan" type="checkbox" name="quienes viajan" value="pareja"> Pareja</label>
+                  <label for="quienes viajan"><input id="quienes viajan" type="checkbox" name="quienes viajan" value="familia"> Familia</label>
                 </section>
                 <label for="Info extra (Fecha exacta o estimada, presupuesto estimado, tarjetas de crédito, etc)">
                     <span id="infoextra"><h5>Info extra (Fecha exacta o estimada, presupuesto estimado, tarjetas de crédito, etc)</h5></span>
@@ -57,26 +59,26 @@
                 </label>     
             </label>
             <section id="desde">
-            <label for="Desde Ezeiza">
-                <input id="Desde Ezeiza" type="radio" name="desde">
+            <label for="Desde Ezeiza" name="desde">
+                <input name="desde"  id="Desde Ezeiza" type="radio" value="Ezeiza">
                 Desde Ezeiza
             </label>
             <label for="Desde Ezeiza">
-                <input id="Desde Rosario" type="radio" name="desde">
+                <input name="desde"  id="Desde Rosario" type="radio"  value="Rosario">
                 Desde Rosario
             </label>  
             </section>              
                 <label for="Mejoramos tu oferta" >
                     <span><h5>Adjuntá la oferta que estes tratando de mejorar</h5></span>
-                <input id="file" type="file" id="Mejoramos tu oferta" placeholder="Adjuntá captura o PDF" name="mejor oferta" />
+                <input id="file" type="file" id="Mejoramos tu oferta" placeholder="Adjuntá captura o PDF" name="upload" />
                 <p><h4>Haremos todo lo posible por mejorar la mejor oferta que conseguiste al momento</h4></p>
             <label for="como nos conociste?">¿Como nos conociste?
                 <select name="como nos conociste?" id="dropdown">
                     <option value="redes">-</option>
-                    <option value="redes">Redes sociales.</option>
-                    <option value="redes">Google</option>
-                    <option value="redes">Me los recomendaron.</option>
-                    <option value="redes">Ya viajé con ustedes.</option>
+                    <option value="Redes sociales">Redes sociales.</option>
+                    <option value="Google">Google</option>
+                    <option value="Recomendacion">Me los recomendaron.</option>
+                    <option value="Viajé">Ya viajé con ustedes.</option>
                 </select>
             </label>
             <label for="consultar">
